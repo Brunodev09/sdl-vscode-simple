@@ -15,6 +15,7 @@ int main(int argc, char *argv[]){
         return EXIT_FAILURE;
     }
 
+    // --------------- SETUP SDL
     // 01 Create Window
     window = SDL_CreateWindow(
         "An SDL2 window",                  // window title
@@ -51,6 +52,7 @@ int main(int argc, char *argv[]){
     SDL_RenderCopy(renderer, texture, NULL, NULL);
     SDL_RenderPresent(renderer);
 
+    // --------------- GAME LOOP
     // Game loop
     bool quit = false;
     SDL_Event event;
@@ -67,6 +69,7 @@ int main(int argc, char *argv[]){
         }
     }
     
+    // --------------- DESTROYERS
     // Deconstructors
     delete [] buffer;
     SDL_DestroyRenderer(renderer);
