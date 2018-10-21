@@ -9,7 +9,7 @@
             "command": "g++",
             "args": [
                 "-g",
-                "main2.cpp",
+                "main.cpp",
                 "-ID:\\github\\dependencies\\SDL2-2.0.8\\include",
                 "-LD:\\github\\dependencies\\SDL2-2.0.8\\lib\\x64",
                 "-lSDL2main","-lSDL2", "-lopengl32",
